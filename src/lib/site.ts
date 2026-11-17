@@ -12,10 +12,6 @@ export const SITE = {
 export const NAV = [
   { href: "#pillars", label: "Услуги" },
   { href: "#compare", label: "Тарифы" },
-  { href: "#calculator", label: "Калькулятор" },
+  { href: "#pricing", label: "Стоимость" },
   { href: "#audit", label: "Экспресс-аудит" },
 ] as const;
-
-const plnFormatter = new Intl.NumberFormat("ru-RU", { maximumFractionDigits: 0 });
-
-export const formatNumber = (value: number) => plnFormatter.format(value);

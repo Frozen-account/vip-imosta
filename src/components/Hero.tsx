@@ -49,10 +49,10 @@ export default function Hero() {
               <IconArrow className="h-4 w-4" />
             </a>
             <a
-              href="#calculator"
+              href="#pricing"
               className="inline-flex items-center justify-center rounded-lg border border-white/25 px-7 py-4 text-base font-semibold text-white transition-colors duration-200 hover:border-white/60 hover:bg-white/5"
             >
-              Рассчитать VIP-пакет
+              Стоимость обслуживания
             </a>
           </div>
         </div>

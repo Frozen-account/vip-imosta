@@ -150,10 +150,10 @@ export default function Comparison() {
 
         <div className="mt-8 flex justify-center">
           <a
-            href="#calculator"
+            href="#pricing"
             className="inline-flex items-center justify-center rounded-lg bg-navy px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all duration-200 hover:bg-navy-800 hover:shadow-md"
           >
-            Рассчитать стоимость VIP-пакета
+            Посмотреть стоимость
           </a>
         </div>
       </div>
