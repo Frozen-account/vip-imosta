@@ -14,7 +14,7 @@ export default function Footer() {
             className="h-10 w-auto"
           />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
-            VIP-бухгалтерия, Fractional CFO и операционный консьерж для растущих Sp. z o.o. в Польше.
+            VIP-бухгалтерия, Fractional CFO и выездное обслуживание для Sp. z o.o. в Польше.
           </p>
         </div>
 

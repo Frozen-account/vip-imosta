@@ -48,7 +48,7 @@ export async function POST(request: Request) {
     .join(" / ");
 
   const text = [
-    "<b>🔴 VIP / CFO Concierge — новая заявка</b>",
+    "<b>🔴 VIP &amp; CFO — новая заявка</b>",
     `<b>Тип:</b> Spolka · Экспресс-аудит 1 200 PLN`,
     `<b>Имя:</b> ${escapeHtml(lead.name)}`,
     `<b>Контакт:</b> ${escapeHtml(lead.contact)}`,

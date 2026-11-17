@@ -16,7 +16,7 @@ const PRICING = {
   perExtraDoc: 7,
   perPerson: 45,
   perVisit: 600,
-  paymentConcierge: 700,
+  paymentPrep: 700,
   cfoReport: 1500,
 };
 
@@ -26,7 +26,7 @@ const HOURS = {
   perDoc: 0.04, // ~2.4 min per document: collecting, forwarding, answering questions
   perPerson: 0.5, // payroll / B2B invoices coordination
   perVisit: 2.5, // no trips with documents, on-site questions solved
-  paymentConcierge: 6, // preparing and checking bank transfers
+  paymentPrep: 6, // preparing and checking bank transfers
   cfoReport: 8, // own spreadsheets and management analysis
 };
 
@@ -141,7 +141,7 @@ export default function Calculator() {
       },
       { label: "Команда / контрагенты B2B", value: people * PRICING.perPerson },
       { label: "Выезды бухгалтера в офис", value: visits * PRICING.perVisit },
-      { label: "Платежный консьерж в банке", value: payments ? PRICING.paymentConcierge : 0 },
+      { label: "Подготовка платежных поручений в банке", value: payments ? PRICING.paymentPrep : 0 },
       { label: "Ежемесячный отчет CFO", value: cfo ? PRICING.cfoReport : 0 },
     ];
     const total = lines.reduce((s, l) => s + l.value, 0);
@@ -150,7 +150,7 @@ export default function Calculator() {
       docs * HOURS.perDoc +
       people * HOURS.perPerson +
       visits * HOURS.perVisit +
-      (payments ? HOURS.paymentConcierge : 0) +
+      (payments ? HOURS.paymentPrep : 0) +
       (cfo ? HOURS.cfoReport : 0);
     return { lines, total: Math.round(total / 50) * 50, hours: Math.round(hours) };
   }, [docs, people, visits, payments, cfo]);
@@ -162,7 +162,7 @@ export default function Calculator() {
       `Документов в месяц: ${docs}`,
       `Команда / B2B: ${people}`,
       `Выезды в офис: ${visits} раз/мес.`,
-      `Платежный консьерж: ${payments ? "да" : "нет"}`,
+      `Подготовка платежей в банке: ${payments ? "да" : "нет"}`,
       `Отчет CFO: ${cfo ? "да" : "нет"}`,
       `Оценка: ~${formatNumber(result.total)} PLN netto/мес., экономия ~${result.hours} ч/мес.`,
     ].join("; ");
@@ -240,7 +240,7 @@ export default function Calculator() {
             <div className="grid gap-3 sm:grid-cols-2">
               <Toggle
                 id="calc-payments"
-                label="Платежный консьерж в банке"
+                label="Подготовка платежей в банке"
                 description="Готовим пакеты платежей с проверкой Biała Lista VAT и Split Payment — вам остается подтвердить."
                 checked={payments}
                 onChange={(v) => {

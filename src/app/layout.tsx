@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "VIP-бухгалтерия и Fractional CFO для Sp. z o.o. — IMOSTA Group",
   description:
-    "Личный финансовый директор, выезды бухгалтера в офис в Варшаве, закрытие месяца до 10-го числа и полная защита перед Urząd Skarbowy и ZUS. Экспресс-аудит от CFO — 1 200 PLN netto.",
+    "Персональный финансовый директор (Fractional CFO), выезды бухгалтера в офис в Варшаве, закрытие месяца до 10-го числа и полное представительство перед Urząd Skarbowy и ZUS. Экспресс-аудит от CFO — 1 200 PLN netto.",
   openGraph: {
-    title: "VIP-бухгалтерия и финансовый консьерж — IMOSTA Group",
+    title: "VIP-бухгалтерия и финансовый директор (CFO) — IMOSTA Group",
     description:
-      "Fractional CFO, Fast Close до 10-го числа, выезды в офис и юрист в пакете для растущих Sp. z o.o. в Польше.",
+      "Fractional CFO, Fast Close до 10-го числа, выездное обслуживание и юрист в пакете для Sp. z o.o. в Польше.",
     locale: "ru_RU",
     type: "website",
     images: ["/images/imosta-logo.png"],

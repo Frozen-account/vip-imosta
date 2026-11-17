@@ -5,7 +5,7 @@ type Cell = string | null;
 const TIERS = [
   { name: "Standard", note: "Базовый учет" },
   { name: "Business", note: "Для активных Sp. z o.o." },
-  { name: "VIP / CFO Concierge", note: "Финансовый отдел под ключ", featured: true },
+  { name: "VIP & CFO", note: "Финансовый отдел под ключ", featured: true },
 ] as const;
 
 const ROWS: { label: string; hint?: string; cells: [Cell, Cell, Cell] }[] = [
@@ -71,7 +71,7 @@ export default function Comparison() {
         {/* Desktop / tablet table */}
         <div className="mt-10 hidden overflow-hidden rounded-2xl border border-line shadow-card md:block">
           <table className="w-full table-fixed border-collapse text-left text-[15px]">
-            <caption className="sr-only">Сравнение тарифов Standard, Business и VIP / CFO Concierge</caption>
+            <caption className="sr-only">Сравнение тарифов Standard, Business и VIP & CFO</caption>
             <thead>
               <tr>
                 <th scope="col" className="w-[26%] bg-canvas p-5 align-bottom text-sm font-semibold text-muted">

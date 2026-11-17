@@ -48,18 +48,6 @@ export const IconPhone = ({ className }: IconProps) => (
     <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" />
   </svg>
 );
-export const IconClock = ({ className }: IconProps) => (
-  <svg {...base} className={className}>
-    <circle cx="12" cy="12" r="9" />
-    <path d="M12 7v5l3 2" />
-  </svg>
-);
-export const IconAlert = ({ className }: IconProps) => (
-  <svg {...base} strokeWidth={2.2} className={className}>
-    <circle cx="12" cy="12" r="9" />
-    <path d="M12 8v5M12 16.5v.5" />
-  </svg>
-);
 export const IconArrow = ({ className }: IconProps) => (
   <svg {...base} strokeWidth={2} className={className}>
     <path d="M5 12h14M13 6l6 6-6 6" />
